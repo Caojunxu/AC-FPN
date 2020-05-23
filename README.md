@@ -1,12 +1,6 @@
 # Attention-guided Context Feature Pyramid Network for Object Detection
 
-This repository is written by Junxu Cao, on the base of [Detectron](https://github.com/facebookresearch/Detectron) @ [e8942c8](https://github.com/facebookresearch/Detectron/tree/e8942c882abf6e28fe68a626ec55028c9bdfe1cf).
-
-## Introduction
-
-This repository re-implements AC-FPN on the base of [Detectron](https://github.com/facebookresearch/Detectron) and [Detectron-Cascade-RCNN](https://github.com/zhaoweicai/Detectron-Cascade-RCNN).
-
-Please follow [Detectron](https://github.com/facebookresearch/Detectron) on how to install and use this repo.
+This repository re-implements AC-FPN on the base of [Detectron-Cascade-RCNN](https://github.com/zhaoweicai/Detectron-Cascade-RCNN). Please follow [Detectron](https://github.com/facebookresearch/Detectron) on how to install and use this repo.
 
 ## AC-FPN
 
@@ -23,7 +17,7 @@ More detail in paper.
 
 ## Benchmarking
 
-Because of the proposed architecture, We have better performance on most of FPN-base method, especially on large objects.
+Because of the proposed architecture, We have better performance on most of FPN-base methods, especially on large objects.
 ![segmentation](pics/paper_result.png) 
 
 This repo has released CEM module without AM module, but we can get higher performance than the implementation of pytorch in paper.
