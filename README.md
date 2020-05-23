@@ -6,11 +6,11 @@ This repository is written by Junxu Cao, on the base of [Detectron](https://gith
 
 This repository re-implements AC-FPN on the base of [Detectron](https://github.com/facebookresearch/Detectron) and [Detectron-Cascade-RCNN](https://github.com/zhaoweicai/Detectron-Cascade-RCNN).
 
-Please follow [Detectron](https://github.com/facebookresearch/Detectron) on how to install and use Detectron-Cascade-RCNN.
+Please follow [Detectron](https://github.com/facebookresearch/Detectron) on how to install and use this repo.
 
 ## AC-FPN
 
-Because of the proposed architecture, We have better performance on bigger objectWe have better performance on bigger object 
+AC-FPN can be readily plugged into existing FPN-based models and improve performance.
 ![architecture](pics/architecture.jpg)
 
 Object detection result
@@ -23,7 +23,7 @@ More detail in paper.
 
 ## Benchmarking
 
-AC-FPN can be readily plugged into existing FPN-based models and improve performance.
+Because of the proposed architecture, We have better performance on most of FPN-base method, especially on large objects.
 ![segmentation](pics/paper_result.png) 
 
 This repo has released CEM module without AM module, but we can get higher performance than the implementation of pytorch in paper.
@@ -109,7 +109,3 @@ and Detectron:
   year =         {2018}
 }
 ```
-
-## Benchmarking
-
-performance coming soon
