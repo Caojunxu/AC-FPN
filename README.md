@@ -13,10 +13,10 @@ Please follow [Detectron](https://github.com/facebookresearch/Detectron) on how 
 Because of the proposed architecture, We have better performance on bigger objectWe have better performance on bigger object 
 ![architecture](pics/architecture.jpg)
 
-Object detection result
+Visualization of object detection. Both models are built upon ResNet-50 on COCO minival.
 ![detection](pics/detection_samples.png) 
 
-Instance segmentation result
+Results of Mask R-CNN with (w) and without (w/o) our modules built upon ResNet-50 on COCO minival.
 ![segmentation](pics/instance_samples.png) 
 
 More detail in paper.
