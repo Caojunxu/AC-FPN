@@ -1,6 +1,6 @@
 # Attention-guided Context Feature Pyramid Network for Object Detection
 
-This repository re-implements AC-FPN on the base of [Detectron-Cascade-RCNN](https://github.com/zhaoweicai/Detectron-Cascade-RCNN). Please follow [Detectron](https://github.com/facebookresearch/Detectron) on how to install and use this repo.
+This repository re-implements [AC-FPN](https://arxiv.org/abs/2005.11475) on the base of [Detectron-Cascade-RCNN](https://github.com/zhaoweicai/Detectron-Cascade-RCNN). Please follow [Detectron](https://github.com/facebookresearch/Detectron) on how to install and use this repo.
 
 ## AC-FPN
 
@@ -13,7 +13,7 @@ Visualization of object detection. Both models are built upon ResNet-50 on COCO 
 Results of Mask R-CNN with (w) and without (w/o) our modules built upon ResNet-50 on COCO minival.
 ![segmentation](pics/instance_samples.png) 
 
-More detail in paper.
+More detail in [paper](https://arxiv.org/abs/2005.11475).
 
 ## Benchmarking
 
