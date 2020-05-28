@@ -4,7 +4,7 @@ This repository re-implements [AC-FPN](https://arxiv.org/abs/2005.11475) on the 
 
 ## AC-FPN
 
-AC-FPN can be readily plugged into existing FPN-based models and improve performance.
+AC-FPN can be readily plugged into existing FPN-based models and improve performance. 
 ![architecture](pics/architecture.jpg)
 
 Visualization of object detection. Both models are built upon ResNet-50 on COCO minival.
@@ -20,13 +20,15 @@ More detail in [paper](https://arxiv.org/abs/2005.11475).
 Because of the proposed architecture, We have better performance on most of FPN-base methods, especially on large objects.
 ![segmentation](pics/paper_result.png) 
 
-This repo has released CEM module without AM module, but we can get higher performance than the implementation of pytorch in paper.
+This repo has **released CEM module without AM module**, but we can get **higher performance** than the implementation of pytorch in paper. 
 Also, thanks to the power of detectron, this repo is faster in training and inference.
 
-The result of coco test-dev(team Neptune)
-![rank](pics/rank.png) 
-### Mask R-CNN with Bells & Whistles
+The **implementation of CEM is very simple**, which is less than 200 lines code, but it can **boost the performance almost 3% AP** in FPN(resnet50).
 
+The result of coco test-dev(team Neptune).
+![rank](pics/rank.png) 
+
+### Mask R-CNN with Bells & Whistles
 <table><tbody>
 <!-- START BELLS TABLE -->
 <!-- TABLE HEADER -->
@@ -58,7 +60,7 @@ The result of coco test-dev(team Neptune)
 <td align="right"><sup><sub>55.0</sub></sup></td>
 </tr>
 <tr>
-<td align="left"><sup><sub>X-152-32x8d-FPN-IN5k-acfpn(just CEM)</sub></sup></td>
+<td align="left"><sup><sub>X-152-32x8d-FPN-IN5k-acfpn(only CEM)</sub></sup></td>
 <td align="left"><sup><sub>Mask</sub></sup></td>
 <td align="left"><sup><sub>s1x</sub></sup></td>
 <td align="right"><sup><sub>1</sub></sup></td>
@@ -70,7 +72,6 @@ The result of coco test-dev(team Neptune)
 </tbody></table>
 
 
-
 ## Citation
 
 If you use our code/model/data, please site our paper:
@@ -79,6 +80,7 @@ If you use our code/model/data, please site our paper:
 @inproceedings{cai18cascadercnn,
   author = {Junxu Cao, Qi Chen, Jun Guo, and Ruichao Shi},
   Title = {Attention-guided Context Feature Pyramid Network for Object Detection},
+  booktitle = {arXiv},
   Year  = {2019}
 }
 ```
