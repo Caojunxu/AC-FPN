@@ -77,11 +77,12 @@ The result of coco test-dev(team Neptune).
 If you use our code/model/data, please site our paper:
 
 ```
-@inproceedings{cai18cascadercnn,
-  author = {Junxu Cao, Qi Chen, Jun Guo, and Ruichao Shi},
-  Title = {Attention-guided Context Feature Pyramid Network for Object Detection},
-  booktitle = {arXiv},
-  Year  = {2019}
+@article{cao2020attention,
+  title={Attention-guided Context Feature Pyramid Network for Object Detection},
+  author={Cao, Junxu and Chen, Qi and Guo, Jun and Shi, Ruichao},
+  journal={arXiv},
+  pages={arXiv--2005},
+  year={2020}
 }
 ```
 and Cascadercnn:
