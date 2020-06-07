@@ -351,9 +351,8 @@ def add_dense_fpn(model, fpn_level_info):
         )
 
     #
-    # Step 1: recursively build down starting from the coarsest backbone level
+    # Step 1: Get context with higher Receptive field.
     #
-    """Get context with higher Receptive field."""
     deeplab = DenseASPP(model, lateral_input_blobs[0])
     output_blobs[0] = model.net.Sum([output_blobs[0], deeplab], "dense_aspp_context")
 
