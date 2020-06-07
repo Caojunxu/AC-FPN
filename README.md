@@ -2,6 +2,11 @@
 
 This repository re-implements [AC-FPN](https://arxiv.org/abs/2005.11475) on the base of [Detectron-Cascade-RCNN](https://github.com/zhaoweicai/Detectron-Cascade-RCNN). Please follow [Detectron](https://github.com/facebookresearch/Detectron) on how to install and use this repo.
 
+This repo has **released [CEM module](https://github.com/Caojunxu/AC-FPN/blob/master/detectron/modeling/FPN.py) without AM module**, but we can get **higher performance** than the implementation of pytorch in paper. 
+Also, thanks to the power of detectron, this repo is faster in training and inference.
+
+The **implementation of CEM is very simple**, which is less than 200 lines code, but it can **boost the performance almost 3% AP** in FPN(resnet50).
+
 ## AC-FPN
 
 AC-FPN can be readily plugged into existing FPN-based models and improve performance. 
@@ -19,11 +24,6 @@ More detail in [paper](https://arxiv.org/abs/2005.11475).
 
 Because of the proposed architecture, We have better performance on most of FPN-base methods, especially on large objects.
 ![segmentation](pics/paper_result.png) 
-
-This repo has **released CEM module without AM module**, but we can get **higher performance** than the implementation of pytorch in paper. 
-Also, thanks to the power of detectron, this repo is faster in training and inference.
-
-The **implementation of CEM is very simple**, which is less than 200 lines code, but it can **boost the performance almost 3% AP** in FPN(resnet50).
 
 The result of coco test-dev(team Neptune).
 ![rank](pics/rank.png) 
